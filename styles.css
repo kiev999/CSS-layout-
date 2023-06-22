@@ -1,0 +1,129 @@
+.section1 {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+}
+
+.introduction {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 20px;
+}
+
+.introduction p {
+  line-height: 1.6;
+  color: grey;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.section1 h1 {
+  color: #00b39b;
+  font-weight: 100;
+  font-family: "Work Sans", Arial, sans-serif;
+}
+
+.section2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.patients {
+  background-color: #00ccb1;
+}
+
+.doctors {
+  background-color: #3e83e0;
+}
+
+.clinics {
+  background-color: #1b2735;
+}
+
+.box {
+  height: 300px;
+  border-radius: 15px;
+  padding: 20px;
+  color: white;
+  font-family: "Work Sans", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.box p {
+  font-size: 20px;
+}
+select {
+  border: none;
+  background-color: transparent;
+  text-decoration: underline;
+  color: white;
+  font-size: 20px;
+}
+option {
+  color: grey;
+}
+.section2 {
+  width: 70%;
+  margin: auto;
+}
+.section1 {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.section3{
+  background-color:#daf7f5 ;
+  height: 600px ;
+  margin-top: 50px;
+}
+/*****section3*****/
+
+
+
+.section3{
+  background-color: #e0f9f6;
+  height: 600px;
+  margin-top: 50px;
+  position: relative;
+}
+.platforme{
+display: grid;
+grid-template-columns:repeat(2,1fr);
+grid-gap: 20px;
+width: 70% ;
+}
+.states h1{
+  color: #00b39b ;
+  font-weight: 100;
+  width: 70%;
+}
+.states p{
+  color: grey;
+  width: 70% ;
+}
+.logo{
+  position: absolute;
+}
+
+@media (max-width: 500px) {
+  .introduction{
+    display:grid ;
+    grid-template-columns: 100%;
+  }
+  .section1{
+    width: 100%;
+  }
+  .section1 h1 {
+    text-align: center;
+  }
+  .section2 {
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+    grid-gap: 20px;
+  }
+  .section2{
+    width: 100%;
+  }
+}
